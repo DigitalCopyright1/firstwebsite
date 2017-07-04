@@ -1,0 +1,819 @@
+@font-face {
+    font-family: 'OpenSansHebrew-Regular';
+    src: url('../fonts/OpenSansHebrew-Regular.eot');
+    src: url('../fonts/OpenSansHebrew-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSansHebrew-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#bg{
+    position:fixed;
+    background-color:white; 
+    height: 4000px;
+    width:960px;
+    border-right:3px solid #F3F3F3;
+    border-left:3px solid #F3F3F3;
+}
+body 
+{
+    direction:rtl;
+    height:100%;
+    background-repeat:repeat;
+}
+#bodybgnormal{
+    background-image: url(../images/bodybg.png);
+}
+#bodybgorange{
+    background-image: url(../images/bodybgorange.png);
+}
+#bodybgblue{
+    background-image: url(../images/bodybgblue.png);
+}
+#bodybgyellow{
+    background-image: url(../images/bodybgyellow.png);
+}
+#bodybgpink{
+    background-image: url(../images/bodybgpink.png);
+}
+#bodybgpurple{
+    background-image: url(../images/bodybgpurple.png);
+}
+
+
+body *{
+    font-family:OpenSansHebrew-Regular;
+
+}
+
+#container{
+    margin:0 auto;
+    width:960px;
+    position:relative;
+}
+h2{
+    position: relative;
+    font-size:16pt;
+}
+h3{
+    font-size:14pt;
+    padding-bottom: 10px;
+}
+h4{
+    font-size:13pt;
+}
+a:visited{
+    color:blue;
+}
+p, ul *, ol *{
+    position: relative;
+    font-size:13pt;
+    line-height: 1.8;
+}
+nav ul *, nav ol *{
+    position: relative;
+    font-size:13pt;
+    line-height: 1;
+}
+section{
+    position: relative;
+}
+/*קפיצה לתוכן - עבור הנגשה*/
+#skip{
+    padding:5px;
+    text-decoration:underline;
+    color:transparent;
+    position:relative;
+    font-size:8pt;
+
+}
+#skip:hover,#skip:focus{
+    font-size:12pt;
+    color:blue;
+}
+/*לוגו ושם האתר*/
+#logoAndName{
+    position:absolute;
+    top:15px;
+    right: 5px;
+}
+#myLogo{
+    width:350px;
+    height:225px;
+    float:right;
+    margin-top:-88px;
+    margin-right:-65px;
+    display:inline-block;
+}
+#nameSite{
+   float:right;
+   margin:15px 10px 0px 0px;
+   display:inline-block;
+   font-size:11pt;
+   color:black;
+   
+}
+/*תפריטים ראשיים + תפריט אמצעי עמוד הבית*/
+#topNav {
+    position:relative;
+    right:170px;
+    top: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;   
+}
+#topNav ul{
+    list-style:none;
+}
+#topNav ul li{
+    display:inline-block;
+    float:right;
+    margin-top:10px;
+    margin-right:10px;
+    padding-right:10px;
+}
+
+#topNav ul li:nth-child(2),#topNav ul li:nth-child(3),#topNav ul li:nth-child(4),#topNav ul li:nth-child(5){
+    border-right:2px solid gray;
+}
+#topNav ul li a{
+    width: 90px;
+    height: 20px;
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    font-size:14pt;
+    color:black;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#topNav ul li:last-child a{
+    border: 3px solid white;
+    margin:2px 1px 2px 1px;
+    width: 90px;
+    height: 65px;
+    top:-10px;
+    background-color: #f7f7f7;
+    padding-top: 10px;
+}
+#topNav ul li:last-child{
+    top:-20px;
+    right: 55px;
+}
+
+#topNav ul li #topCode{
+    width: 80px;
+}
+
+#topNav ul li #topPhoto:hover,#topNav ul li #topPhoto:focus{
+    background-color:#FEEAD6;
+    text-decoration:underline;
+    color:black;
+    box-shadow: 0px 0px 1px #888888;
+}
+#topNav ul li #topMovie:hover,#topNav ul li #topMovie:focus{
+    background-color:#D5F1FB;
+text-decoration:underline;
+    color:black;
+    box-shadow: 0px 0px 1px #888888;
+}
+#topNav ul li #topSound:hover,#topNav ul li #topSound:focus{
+    background-color:#FFFFBD;
+    text-decoration:underline;
+    color:black;
+    box-shadow: 0px 0px 1px #888888;
+}
+#topNav ul li #topFonts:hover, #topNav ul li #topFonts:focus{
+    background-color:#FFB9E3;
+    text-decoration:underline;
+    color:black;
+    box-shadow: 0px 0px 1px #888888;
+}
+#topNav ul li #topCode:hover,#topNav ul li #topCode:focus {
+    text-decoration:underline;
+    color:black;
+    background-color:#DFD3FD;
+    box-shadow: 0px 0px 1px #888888;
+}
+#topNav ul li .otherNav:hover,.footNav ul li .otherNav:hover,#topNav ul li .otherNav:focus,.footNav ul li .otherNav:focus{
+    text-decoration:underline;
+    color:black;
+    background-color:#bdbdbd;
+    box-shadow: 0px 0px 1px #888888;
+}
+#homeNav{
+    position:relative;
+    right:75px;
+    top:-60px;
+}
+#homeNav ul{
+list-style:none;
+}
+#homeNav ul li{
+display:inline-block;
+float:right;
+padding-right:20px;
+border-radius:10px;
+padding:15px 30px 5px 30px;
+}
+
+#homeNav ul li:hover{
+    box-shadow: 0px 0px 1px #888888;
+}
+
+#homeNav ul li a{
+    text-decoration: none;
+
+}
+#homeNav ul li .catgor{
+    display:block;
+    padding-top:10px;
+    text-align:center;
+    padding-bottom:10px;
+    color:black;
+    font-size:16pt;
+}
+#homeNav ul #navPic:hover{
+background-color:#FEEAD6;
+}
+#homeNav ul #navPic a:hover span,#homeNav ul #navPic a:focus span {
+    text-decoration:underline;
+    color:black;
+    background-color:#FEEAD6;
+}
+
+#homeNav ul #navMov:hover{
+background-color:#D5F1FB;
+}
+#homeNav ul #navMov a:hover span,#homeNav ul #navMov a:focus span {
+    text-decoration:underline;
+    color:black;
+    background-color:#D5F1FB;
+}
+
+#homeNav ul #navSound:hover{
+background-color:#FFFFBD;
+}
+#homeNav ul #navSound a:hover span,#homeNav ul #navSound a:focus span {
+    text-decoration:underline;
+    color:black;
+    background-color:#FFFFBD;
+}
+
+#homeNav ul #navFonts:hover{
+background-color:#FFB9E3;
+}
+#homeNav ul #navFonts a:hover span,#homeNav ul #navFonts a:focus span{
+    text-decoration:underline;
+    color:black;
+    background-color:#FFB9E3;
+}
+
+#homeNav ul #navCode:hover{
+background-color:#DFD3FD;
+}
+#homeNav ul #navCode a:hover span,#homeNav ul #navCode a:focus span {
+    text-decoration:underline;
+    color:black;
+    background-color:#DFD3FD;
+}
+#homeFootNav{
+    height: 0px;
+    width: 300px;
+    position:relative;
+    top:-210px;
+    right:700px;
+
+}
+.footNav ul{
+    list-style:none;
+}
+.footNav ul li{
+    display:inline-block;
+}
+.footNav ul li:nth-child(2){
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.footNav ul li a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    text-align:center;
+    color:black;
+    font-size:12pt;
+    border-radius: 6px;
+    margin: 0px 5px 0px 5px;
+}
+#homeFooter{
+    width:960px;
+    position:relative;
+    top:220px;
+    margin-bottom: 20px;
+}
+
+/*תמונת אווירה - עמוד הבית*/
+#studentBackground {
+    background-image: url('../images/studentBackground.png');
+    background-repeat: no-repeat;
+    width: 961px;
+    height: 505px;
+    position: relative;
+    top: 59px;
+    right:2px;
+}
+/*קטעי טקסט עמוד פתיחה*/
+#intro{
+    position:relative;
+    top:-390px;
+    right:50px;
+    font-size:12pt;
+}
+
+#intro h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#intro span{
+    position:relative;
+    font-size: 22px;
+    line-height: 0.7;
+}
+#introText {
+    top: 5px;
+}
+
+#intro2{
+    position:relative;
+    top: -80px;
+    right:290px;
+    font-size:18pt;
+}
+/* קווי עיצוב אפורים*/
+.greyLine{
+    width: 962px;
+    height: 20px;
+    background-color:#F3F3F3;
+}
+
+#topGreyLine{
+    position:relative;
+    top:60px;
+    right:1px;
+}
+
+#homeGreyLine{
+    position:relative;
+    top: 125px;
+    right: 1px;
+}
+
+#bottomGreyLine{
+    position:relative;
+    top: 30px;
+    right:-35px;
+}
+#contactGreyLine{
+    position:relative;
+    top: 30px;
+    right:2px;
+}
+
+
+
+
+/*###############*/
+/*  עמודי תוכן  */
+/*###############*/
+.toppositions ul{
+    margin:0px 0px 35px 0px;
+}
+.toppositions ol {
+    margin:0px 0px 35px 0px;
+}
+.toppositions ul li{
+    margin:15px 0px;
+}
+
+.content{
+    position:absolute;
+    top: 160px;
+    padding: 0px 40px 0px 40px;
+    
+}
+.toppositions h4{
+    margin-top:25px;
+}
+
+#container p{
+color:#161616;
+}
+.tip{
+    border:1px solid black;
+    border-radius:10px;
+    padding-right: 10px;
+    margin:30px 0px 10px 0px;
+    width:700px;
+    position: relative;
+    right: 60px;
+}
+.tip p{
+    text-align:center;
+}
+.tip strong{
+    color:#4f0101;
+}
+.content p{
+    position:relative;
+    
+}
+#pictureTitle{
+    position:relative;
+}
+#contentTitle{
+    position:relative;
+    top: -50px;
+    right: 110px;
+    font-size:20pt;
+    font-weight:bold;
+}
+
+.content li{
+    position:relative;
+    right: 20px;
+}
+#contentFooter{
+    width:960px;
+    height:50px;
+    position:relative;
+    top: 40px;
+}
+#secondExplain{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#contentFootNav{
+    position:relative;
+    right:643px;
+    width: 300px;
+}
+.myIntro{
+    margin:15px 0px;
+    font-size: 14pt;
+}
+
+.guidePics{
+    padding: 20px;
+    margin:20px;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius:5px;    
+}
+#startPage{
+    margin:30px 0 50px 0;
+}
+#startPage *{
+    font-size: 14pt;
+}
+#todo{
+    font-size: 16pt;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+/* Accordion */
+
+button{
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 880px;
+    height: 65px;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #797979;
+}
+
+button h2, button h3, button h4{
+    float: right;
+    margin-right: 70px;
+    font-size: 14pt;
+}
+
+button span{
+    display:inline-block;
+    font-size: 36pt;
+    font-weight:bold;
+    text-align:justify;
+    position:relative;
+    text-align:center;
+    vertical-align:top;
+    top: -18px;
+    right: -797px;
+    width:65px;
+    height: 65px;
+}
+
+.panel {
+    display: none;
+    width: 840px;
+    padding: 20px;
+    position:relative;
+    top:-10px;
+    box-shadow: 1px 1px 3px #797979;
+}
+
+button:focus h2, button:focus h3, button:focus h4, button:hover h2, button:hover h3, button:hover h4{
+    text-decoration: underline;
+}
+#otherContent{
+    position: relative;
+    right: 20px;
+}
+#otherContent h1{
+    font-size: 16pt;
+    top: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+/* ~ ~ ~ ~ תמונות רקע ~ ~ ~ ~ */
+/* עמוד הבית */
+#homeBodyBGs{
+    background-image: url(../images/bodybg.png);
+    background-repeat: repeat;
+}
+
+/* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+
+/* עמוד תמונות*/
+#picturesContent button span{
+    background-color:#FAC48D;
+}
+
+#picturesContent button:active, #picturesContent button:hover, #picturesContent button:focus {
+    background-color: #ffd5ad;
+}
+
+#picturesContent button {
+    background-color: #FCE3CB;
+}
+
+#picturesContent .panel {
+    background-color: #FEF7F0;
+}
+.hoverLink:hover, .hoverLink:focus{
+    font-weight:bold;
+}   
+.hoverLink{
+    font-size: 18px;
+    color:blue;
+}
+a{
+    
+}
+
+#stayPic a{
+    background-color:#FCE3CB;
+    font-weight:bold;
+    color:black;
+    box-shadow: 0px 0px 3px #797979;
+}
+
+/* עמוד סרטונים*/
+
+#moviesContent button span{
+    background-color:#82bed5;
+}
+
+#moviesContent button:active, #moviesContent button:hover, #moviesContent button:focus {
+    background-color: #88d6f5;
+}
+
+#moviesContent button {
+    background-color: #cbeefb;
+}
+
+#moviesContent .panel {
+    background-color: #e2f4fb;
+}
+
+#movieLinks{
+    margin: 50px 0 10px 0;
+}
+}
+.h2movie{
+    margin:15px 0px;
+}
+#stayMovie a{
+    background-color:#D5F1FB;
+    font-weight:bold;
+    color:black;
+    box-shadow: 0px 0px 3px #797979;
+}
+
+.h3movie{
+    font-size: 24pt;
+    position:relative;
+    margin: 30px 0px 20px 0px;
+    padding-top: 20px;
+    width: 960px;
+    height: 50px;
+    background-color: #F3F3F3;
+    text-align:center;
+    right: -37px;
+}
+#h3facebook{
+        border-bottom: 4px solid blue;
+}
+#h3youtube{
+        border-bottom: 4px solid red;
+}
+/* עמוד סאונד*/
+
+#soundsContent button span{
+    background-color: #f3e972;
+}
+
+#soundsContent button:active, #soundsContent button:hover, #soundsContent button:focus {
+    background-color: #fcf38d;
+}
+
+#soundsContent button {
+    background-color: #f8f4c5;
+}
+
+#soundsContent .panel {
+    background-color: #fcfbe8;
+}
+#staySound a{
+    background-color:#FFFFBD;
+    font-weight:bold;
+    color:black;
+    box-shadow: 0px 0px 3px #797979;
+}
+
+/* עמוד פונטים*/
+
+#fontsContent button span{
+    background-color: #fab2de;
+}
+
+#fontsContent button:active, #fontsContent button:hover, #fontsContent button:focus {
+    background-color: #fec8e9;
+}
+
+#fontsContent button {
+    background-color: #ffe0f3;
+}
+
+#fontsContent .panel {
+    background-color: #ffecf7;
+}
+#stayFonts a{
+    font-weight:bold;
+    color:black;
+    background-color:#FFB9E3;
+    box-shadow: 0px 0px 3px #797979;
+}
+
+/* עמוד קוד תכנות*/
+#codeContent #pictureTitle{
+    top:10px;
+}
+#codeContent button span{
+    background-color:#cdbbff;
+}
+
+#codeContent button:active, #codeContent button:hover, #codeContent button:focus {
+    background-color: #e2d7fe;
+}
+
+#codeContent button {
+    background-color: #eee8ff;
+}
+
+#codeContent .panel {
+    background-color: #f9f7ff;
+}
+#stayCode a{
+    font-weight:bold;
+    color:black;
+    background-color:#DFD3FD;
+    box-shadow: 0px 0px 3px #797979;
+}
+.toppositions p{
+   padding:10px 0px;
+}
+/*עמוד מפת אתר*/
+.mapOrder{
+    margin-top: 80px;
+}
+#mapnav{
+    position:relative;
+    top: 20px;
+}
+
+/*צור קשר*/
+#fullName, #myEmail,#myPhone, #opinion, #sendForm{
+    display:block;
+    margin:10px 0px;
+}
+#contactRevew{
+    margin-top:70px;
+}
+#contactRevew p{
+   margin:10px 0px;
+}
+#stayContact{
+    font-weight:bold;
+    color:black;
+    background-color:#bdbdbd;
+    box-shadow: 0px 0px 3px #797979;
+}
+
+
+#contactFootNav{
+    position:relative;
+    right:703px;
+}
+/*דף אודות*/
+#aboutContent{
+    margin-top: 80px;
+    position: relative;
+    right: 20px;
+    width: 900px;
+}
+
+#aboutContent h1{
+    font-size: 18pt;
+    top: 10px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#aboutContent h2{
+    font-size: 12pt;
+}
+#courses{
+    position: relative;
+    right: 30px;
+    margin: 10px 0px 20px 0px;
+}
+#pages li{
+    line-height: 1.5;
+}
+#aboutContent section{
+    margin-top: 20px;
+}
+#authors{
+    font-size: 20px !important;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+#hitlink{
+    width: 227px;
+    height: 220px;
+    position:relative;
+    right: 340px;
+}
+#hitText{
+    position:relative;
+    right:10px;
+}
+
+/** ייצוג אינטרקטיבי **/
+#animation_container{
+    position:relative;
+    top: 70px;
+    right: 50px;
+}
+#topGreyLineinter {
+     position:relative;
+    top:75px;
+    right:1px;     
+}
+#bottomGreyLineinter {
+   position:relative;
+    top: 35px;
+    right: 0px;
+}
+.bgInter{
+    top:0px;
+}
+.interLogo{
+    position:relative;
+    top: -50px;
+}
+.interNav ul{
+    position: relative;
+    top:-5px;
+}
+#interFootNav{
+    position:relative;
+    right: 700px;
+}
